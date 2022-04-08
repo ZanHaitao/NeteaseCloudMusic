@@ -26,7 +26,6 @@
 # 克隆
 git clone git@github.com:ZanHaitao/NeteaseCloudMusic.git
 # 打开项目目录
-cd NeteaseCloudMusicServer //网易云服务器
 cd NeteaseCloudMusicApp  //React项目App
 # 安装依赖
 npm install
