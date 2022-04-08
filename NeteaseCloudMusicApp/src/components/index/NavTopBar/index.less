@@ -1,0 +1,37 @@
+.nav-bar {
+  height: 30px;
+  background-color: #c20c0c;
+  border-bottom: 1px solid #a40011;
+  .nav {
+    width: 1100px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 176px;
+
+    &-item {
+      margin: 3px 17px 0;
+      position: relative;
+      a {
+        padding: 2px 15px;
+        font-size: 12px;
+        color: #eee;
+        &.active {
+          background-color: #9b0909;
+          border-radius: 10px;
+        }
+      }
+
+      .icon {
+        display: block;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        background-image: url(https://s2.music.126.net/style/web2/img/white-r-icon@3x.png?ac7bc3063bfb8323bab0ed5ae78d0787);
+        background-size: cover;
+        right: 5px;
+        top: 0;
+      }
+    }
+  }
+}

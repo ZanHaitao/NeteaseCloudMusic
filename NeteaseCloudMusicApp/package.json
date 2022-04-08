@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@umijs/preset-react": "^2.1.2",
+    "axios": "^0.26.1",
+    "react-css-modules": "^4.7.11",
     "umi": "^3.5.21"
   }
 }

@@ -1,0 +1,120 @@
+.header {
+  height: 75px;
+  box-sizing: border-box;
+  background: #242424;
+  border-bottom: 5px solid #c20c0c;
+
+  .wrapper {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    //logo
+    .logo {
+      background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e84567b041cbf716abba1230638b5873)
+        no-repeat 0 9999px;
+      width: 176px;
+      height: 70px;
+      background-position: 0 0;
+    }
+    //导航栏
+    .nav {
+      display: flex;
+      height: 100%;
+
+      &-item {
+        height: 100%;
+        cursor: pointer;
+        font-size: 14px;
+        color: #ccc;
+        position: relative;
+        a {
+          display: block;
+          height: 100%;
+          line-height: 70px;
+          padding: 0 20px;
+        }
+
+        a.active,
+        &:hover a {
+          background-color: #000;
+          color: #fff;
+        }
+
+        a.active::before {
+          content: "";
+          border: 6px solid #c20c0c;
+          border-top-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .hot {
+        display: block;
+        position: absolute;
+        top: 21px;
+        left: 100px;
+        width: 28px;
+        height: 19px;
+        background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e84567b041cbf716abba1230638b5873)
+          no-repeat 0 9999px;
+        background-position: -190px 0;
+      }
+    }
+    //search
+    .search {
+      width: 158px;
+      height: 32px;
+      background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e84567b041cbf716abba1230638b5873)
+        no-repeat 0 9999px;
+      background-color: #fff;
+      border-radius: 18px;
+      background-position: 0 -99px;
+      padding-left: 30px;
+      box-sizing: border-box;
+      margin-left: auto;
+      input {
+        outline: none;
+        width: 95%;
+        color: #9b9b9b;
+        cursor: text;
+        font-size: 12px;
+        border: none;
+        margin-top: 7px;
+      }
+    }
+    //framer
+    .framer {
+      width: 90px;
+      height: 32px;
+      border: 1px solid #4f4f4f;
+      line-height: 32px;
+      color: #ccc;
+      border-radius: 20px;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 10px;
+
+      &:hover {
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+    //login
+    .login {
+      color: #787878;
+      font-size: 12px;
+      margin-left: 20px;
+      a:hover {
+        color: #787878;
+        text-decoration: underline;
+      }
+    }
+  }
+}

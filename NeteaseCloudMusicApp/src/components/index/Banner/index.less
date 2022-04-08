@@ -1,0 +1,106 @@
+.banner {
+  height: 285px;
+  background-size: 6000px;
+  background-position: center center;
+  transition: all 0.7s;
+
+  &-content {
+    width: 980px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+
+    .carousel {
+      width: 730px;
+      height: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.7s;
+        &.hide {
+          opacity: 0;
+        }
+      }
+
+      .control {
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        &-item {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background-color: #fff;
+          margin: 0 7px;
+          cursor: pointer;
+          &.active {
+            background-color: #a40011;
+          }
+        }
+      }
+    }
+
+    .download {
+      position: relative;
+      flex: 1;
+      .top {
+        background: url(https://s2.music.126.net/style/web2/img/index/download.png?affefb8026a19ccaafa90bed5d3ca015)
+          no-repeat 0 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        a {
+          background: url(https://s2.music.126.net/style/web2/img/index/download.png?affefb8026a19ccaafa90bed5d3ca015)
+            no-repeat 0 0;
+          width: 215px;
+          height: 56px;
+          position: absolute;
+          bottom: 43px;
+          left: 19px;
+          background-position: 0 9999px;
+          &:hover {
+            background-position: 0 -290px;
+          }
+        }
+      }
+      .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #8d8d8d;
+        font-size: 12px;
+        height: 42px;
+        line-height: 42px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+
+    .carousel-left,
+    .carousel-right {
+      width: 37px;
+      height: 63px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(https://s2.music.126.net/style/web2/img/index/banner.png?af472683836950a892d1eac9549a5885)
+        0 9999px no-repeat;
+      cursor: pointer;
+    }
+
+    .carousel-left {
+      left: -60px;
+      background-position: 0 -360px;
+    }
+    .carousel-right {
+      right: -60px;
+      background-position: 0 -508px;
+    }
+  }
+}
