@@ -1,0 +1,17 @@
+{
+  "name": "neteasecloudmusicapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "umi dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@umijs/preset-react": "^2.1.2",
+    "umi": "^3.5.21"
+  }
+}
