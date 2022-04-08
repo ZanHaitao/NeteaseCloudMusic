@@ -3,7 +3,6 @@ logs
 node_modules
 /dist
 .umi
-NeteaseCloudMusicApi
 
 
 # local env files
@@ -24,3 +23,4 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+NeteaseCloudMusicApi
