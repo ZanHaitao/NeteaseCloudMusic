@@ -3,6 +3,9 @@ import styles from "./index.less";
 import CSSModules from "react-css-modules";
 import { getBannerList } from "../../../api/indexApi";
 
+/**
+ * banner
+ */
 class Banner extends React.Component {
   state = {
     carouselData: [{}],
@@ -26,18 +29,14 @@ class Banner extends React.Component {
 
     this.startAutoPlay();
 
-    this.carouseRef.current.addEventListener("mouseenter", () => {
-      this.stopAutoPlay();
-    });
-    this.carouseRef.current.addEventListener("mouseleave", () => {
-      this.startAutoPlay();
-    });
+    this.carouseRef.current.addEventListener("mouseenter", this.stopAutoPlay);
+    this.carouseRef.current.addEventListener("mouseleave", this.startAutoPlay);
   }
 
   componentWillUnmount() {
-    this.stopAutoPlay();
-    this.carouseRef.current.removeEventListener("mouseenter");
-    this.carouseRef.current.removeEventListener("mouseleave");
+    clearInterval(this.timer);
+    this.carouseRef.current.removeEventListener("mouseenter",this.stopAutoPlay);
+    this.carouseRef.current.removeEventListener("mouseleave",this.startAutoPlay);
   }
 
   /**

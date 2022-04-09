@@ -3,6 +3,10 @@ import { NavLink } from "umi";
 import styles from "./index.less";
 import CSSModules from "react-css-modules";
 
+/**
+ * 热门推荐
+ * @returns 
+ */
 function NavTopBar() {
   return (
     <div styleName="nav-bar">

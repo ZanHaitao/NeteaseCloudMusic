@@ -1,0 +1,110 @@
+.hot {
+  padding: 20px 20px 0;
+  .type {
+    display: flex;
+    height: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    &-item {
+      padding: 0 10px;
+      border-right: 1px solid #ccc;
+      margin-bottom: 10px;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .personalized {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    &-item {
+      width: 140px;
+      height: 204px;
+      margin-bottom: 20px;
+
+      .image {
+        width: 140px;
+        height: 140px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        a {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          background: url(https://s2.music.126.net/style/web2/img/coverall.png?5279d9010e9c0d358117d0ed88431117)
+            no-repeat;
+          background-position: 0 0;
+        }
+
+        .info {
+          z-index: 2;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 27px;
+          color: #ccc;
+          background: url(https://s2.music.126.net/style/web2/img/coverall.png?5279d9010e9c0d358117d0ed88431117)
+            no-repeat;
+          background-position: 0 -537px;
+          display: flex;
+          align-items: center;
+
+          .icon-headset {
+            background: url(https://s2.music.126.net/style/web2/img/iconall.png?afe78b1f26814c0b31e6affb5d9532c9)
+              no-repeat;
+            display: inline-block;
+            width: 14px;
+            height: 11px;
+            background-position: 0 -24px;
+            margin-left: 10px;
+          }
+          .icon-pay {
+            background: url(https://s2.music.126.net/style/web2/img/iconall.png?afe78b1f26814c0b31e6affb5d9532c9)
+              no-repeat;
+            display: inline-block;
+            width: 16px;
+            height: 17px;
+            cursor: pointer;
+            background-position: 0 0;
+            margin-left: auto;
+            margin-right: 5px;
+            &:hover {
+              background-position: 0 -60px;
+            }
+          }
+          .pay-count {
+            font-size: 12px;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .title {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-height: 1.5;
+        margin-top: 10px;
+
+        a:hover {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

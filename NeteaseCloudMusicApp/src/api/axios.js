@@ -7,6 +7,6 @@ axios.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 //设置默认请求路径
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://netease-cloud-music-api-blush-xi.vercel.app";
 
 export default axios
